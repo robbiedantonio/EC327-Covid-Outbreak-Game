@@ -2,10 +2,10 @@ CC=g++ -g
 
 OBJS=main.o Building.o Point2D.o Vector2D.o GameObject.o GameCommand.o DoctorsOffice.o Model.o Student.o ClassRoom.o View.o Virus.o
 
-default: PA3
+default: COVID_OUTBREAK
 
-PA3: $(OBJS)
-	$(CC) -o PA3 $(OBJS) 
+COVID_OUTBREAK: $(OBJS)
+	$(CC) -o COVID_OUTBREAK $(OBJS) 
 
 Vector2D.o: Vector2D.cpp Vector2D.h
 	$(CC) -c Vector2D.cpp -o Vector2D.o 
@@ -44,5 +44,5 @@ main.o: main.cpp Building.h Point2D.h Vector2D.h GameCommand.h DoctorsOffice.h M
 	$(CC) -c main.cpp -o main.o
 	
 clean: 
-	rm $(OBJS) PA3 *.exe
+	rm $(OBJS) COVID_OUTBREAK *.exe
 
