@@ -71,8 +71,10 @@ int main()
 					cout << endl;
 					DoRunCommand(m1, v1);
 					break;
+				case 'q':
+					break;
 				default:
-					throw Invalid_Input("Valid commands are: m, d, c, s, v, a, g, r");
+					throw Invalid_Input("Valid commands are: m, d, c, s, v, a, g, r, q");
 			}
 
 		}
