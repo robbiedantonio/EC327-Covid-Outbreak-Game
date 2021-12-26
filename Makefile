@@ -42,19 +42,6 @@ Virus.o: Virus.cpp Virus.h
 	
 main.o: main.cpp Building.h Point2D.h Vector2D.h GameCommand.h DoctorsOffice.h Model.h Student.h ClassRoom.h GameObject.h View.h
 	$(CC) -c main.cpp -o main.o
-
-#checkpoint commands below
-
-checkpoint1: TestCheckPoint1.cpp Point2D.o Vector2D.o GameObject.o
-	$(CC) -o checkpoint1.exe TestCheckPoint1.cpp Point2D.o Vector2D.o GameObject.o
-	
-checkpoint2: TestCheckPoint2.cpp Point2D.o Vector2D.o GameObject.o Building.o DoctorsOffice.o ClassRoom.o
-	$(CC) -o checkpoint2.exe TestCheckPoint2.cpp Point2D.o Vector2D.o GameObject.o Building.o DoctorsOffice.o ClassRoom.o
-	
-#add your own tests for other checkpoints here
-
-checkpoint3: TestCheckPoint3.cpp Point2D.o Vector2D.o GameObject.o Building.o DoctorsOffice.o ClassRoom.o Student.o
-	$(CC) -o checkpoint3.exe TestCheckPoint3.cpp Point2D.o Vector2D.o GameObject.o Building.o DoctorsOffice.o ClassRoom.o
 	
 clean: 
 	rm $(OBJS) PA3 *.exe
